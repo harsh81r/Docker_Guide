@@ -1,4 +1,21 @@
 # Docker_Guide
+# ❗ Problem Statement
+
+Traditional application deployment methods often face issues such as dependency conflicts, inconsistent environments, slow deployment, and scalability problems. Applications may work correctly on one machine but fail on another because of different operating systems, libraries, or configurations.
+
+Managing applications manually also increases maintenance complexity and resource usage, especially in modern cloud-based development.
+
+Docker solves these problems by using lightweight containers that package applications along with all required dependencies and configurations. This ensures consistent application behavior across different environments, simplifies deployment, improves scalability, and increases development efficiency.
+
+
+
+
+
+
+
+
+
+
 i Covering topics like
 1. Introduction
 2. Docker Installation
