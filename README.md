@@ -84,7 +84,59 @@ Commnds
 
 | 25  | List Docker volumes                         | `docker volume ls`                         | `docker volume ls`                          |
 
+# 🌐 Docker Ports
 
+| Topic | Small Explanation |
+|---|---|
+| Docker Port | Ports allow communication between container and host machine. |
+| Purpose | Used to access applications running inside containers from browser or system. |
+| Port Mapping | Connects container port with local machine port. |
+| `-p` Flag | Used for port forwarding in Docker. |
+| Syntax | `docker run -p host_port:container_port image_name` |
+| Example | `docker run -p 3000:3000 node-app` |
+| Browser Access | Application can be accessed using `localhost:3000` |
+| Multiple Ports | Docker can map multiple ports at the same time. |
+| Advantage | Allows external users to access container applications. |
+
+---
+
+# 📌 Docker Port Example
+
+## Run Nginx on Port 8080
+
+```bash
+docker run -p 8080:80 nginx
+```
+
+## Explanation
+
+| Port | Meaning |
+|---|---|
+| `8080` | Local machine port |
+| `80` | Container port |
+| `nginx` | Docker image |
+
+Now open:
+
+```text
+http://localhost:8080
+```
+
+---
+
+# 🚀 Multiple Port Mapping
+
+```bash
+docker run -p 3000:3000 -p 5000:5000 myapp
+```
+
+This maps:
+- Port `3000`
+- Port `5000`
+
+from container to local machine.
+
+---
 
 
 
