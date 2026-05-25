@@ -7,11 +7,30 @@ Managing applications manually also increases maintenance complexity and resourc
 
 Docker solves these problems by using lightweight containers that package applications along with all required dependencies and configurations. This ensures consistent application behavior across different environments, simplifies deployment, improves scalability, and increases development efficiency.
 
+Docker was originally built for Linux because Docker containers use Linux kernel features like:
 
+Namespaces
+cgroups
+Process isolation
 
+Linux already supports these features natively.
 
+🐧 Then How Does Docker Work on Windows and macOS?
 
+Because:
 
+Windows kernel ≠ Linux kernel
+macOS kernel ≠ Linux kernel
+
+Docker cannot run Linux containers directly on them like Linux does.
+
+So Docker uses a small lightweight Linux virtual machine internally.
+
+💡 Simple Understanding
+Operating System	How Docker Works
+Linux	Runs directly on Linux kernel
+Windows	Uses lightweight Linux VM / WSL2
+macOS	Uses lightweight Linux VM
 
 
 
