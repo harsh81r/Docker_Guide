@@ -29,7 +29,7 @@ i Covering topics like
 10. Deployment
 11. Advanced Topics
 
-# Docker Complete Guide 🚀
+# Docker Complete Guide 
 
 | Topic | Explanation |
 |---|---|
